@@ -1,0 +1,179 @@
+HTTP Request,For all menu items,Fetch menu items by category (starters / beverages / main course),Fetch menu items by cuisine (Chinese / Asian / French / Mexican),Fetch menu item by id,Add menu item,Update menu item,Delete menu items
+URL	For all menu items	Fetch menu items by starters	Fetch menu items by beverages	Fetch menu items by main course	Fetch menu items by cuisine Chinese	Fetch menu items by cuisine Asian	Fetch menu items by cuisine French	Fetch menu items by cuisine Mexican	Fetch menu item by id	Add menu item	Update menu item	Delete menu items
+METHOD	GET	GET	GET	GET	GET	GET	GET	GET	GET	POST	PUT	DELETE
+REQUEST	http://localhost:3000/menu	http://localhost:3000/menu?category=Starters	http://localhost:3000/menu?category=Beverages	http://localhost:3000/menu?category=Main Course	http://localhost:3000/menu?cuisine=Chinese	http://localhost:3000/menu?cuisine=Asian	http://localhost:3000/menu?cuisine=French	http://localhost:3000/menu?cuisine=Mexican	http://localhost:3000/menu/109	http://localhost:3000/menu/	http://localhost:3000/menu/311	http://localhost:3000/menu/313
+HTTP Response	SUCCESS	SUCCESS	SUCCESS	SUCCESS	SUCCESS	SUCCESS	SUCCESS	SUCCESS	SUCCESS	SUCCESS	SUCCESS	SUCCESS
+Status Code	200	200	200	200	200	200	200	200	200	201	200	200
+Status Message	OK	OK	OK	OK	OK	OK	OK	OK	OK	OK	OK	OK
+Body	[	[	[	[	[	[	[	[	{	 {	{	{}
+	    {	    {	    {	    {	    {	    {	    {	    {	    "id": 109,	    "id": 311,	        "id": 311,	
+	        "id": 101,	        "id": 101,	        "id": 201,	        "id": 301,	        "id": 305,	        "id": 101,	        "id": 104,	        "id": 108,	    "category": "Starters",	    "category": "Main Course",	        "category": "Main Course",	
+	        "category": "Starters",	        "category": "Starters",	        "category": "Beverages",	        "category": "Main Course",	        "category": "Main Course",	        "category": "Starters",	        "category": "Starters",	        "category": "Starters",	    "itemName": "Brownie",	    "itemName": "Special Pizza",	        "itemName": "mutton biryani",	
+	        "itemName": "Dough Balls Doppio",	        "itemName": "Dough Balls Doppio",	        "itemName": "Berry Blast",	        "itemName": "Fruit Pizza",	        "itemName": "Dan Dan Noodles",	        "itemName": "Dough Balls Doppio",	        "itemName": "Veg Wrap",	        "itemName": "Potato Wedges",	    "price": 60.99,	    "price": 70,	        "price": 270,	
+	        "price": 33.99,	        "price": 33.99,	        "price": 1.72	        "price": 60,	        "price": 50,	        "price": 33.99,	        "price": 35,	        "price": 42.99,	    "cuisine": "Mexican"	    "cuisine": "Asian"	        "cuisine": "Asian"	
+	        "cuisine": "Asian"	        "cuisine": "Asian"	    },	        "cuisine": "French"	        "cuisine": "Chinese"	        "cuisine": "Asian"	        "cuisine": "French"	        "cuisine": "Mexican"	}	  },	    }	
+	    },	    },	    {	    },	    }	    },	    },	    },		  {		
+	    {	    {	        "id": 202,	    {	]	    {	    {	    {		    "id": 312,		
+	        "id": 102,	        "id": 102,	        "category": "Beverages",	        "id": 302,		        "id": 102,	        "id": 105,	        "id": 109,		    "category": "Main Course",		
+	        "category": "Starters",	        "category": "Starters",	        "itemName": "Oreo Monster Shake",	        "category": "Main Course",		        "category": "Starters",	        "category": "Starters",	        "category": "Starters",		    "itemName": "Mushroom Burger",		
+	        "itemName": "Mix Salad Bowl",	        "itemName": "Mix Salad Bowl",	        "price": 3.78	        "itemName": " Combo of 2 Veg Pizzas",		        "itemName": "Mix Salad Bowl",	        "itemName": "Spinach and Artichoke Tortilla Crisp",	        "itemName": "Brownie",		    "price": 70,		
+	        "price": 20,	        "price": 20,	    },	        "price": 80,		        "price": 20,	        "price": 58,	        "price": 60.99,		    "cuisine": "Asian"		
+	        "cuisine": "Asian"	        "cuisine": "Asian"	    {	        "cuisine": "French"		        "cuisine": "Asian"	        "cuisine": "French"	        "cuisine": "Mexican"		  },		
+	    },	    },	        "id": 203,	    },		    },	    },	    },		  {		
+	    {	    {	        "category": "Beverages",	    {		    {	    {	    {		    "id": 313,		
+	        "id": 103,	        "id": 103,	        "itemName": "Classic Mojito",	        "id": 303,		        "id": 110,	        "id": 301,	        "id": 306,		    "category": "Main Course",		
+	        "category": "Starters",	        "category": "Starters",	        "price": 3.44	        "category": "Main Course",		        "category": "Starters",	        "category": "Main Course",	        "category": "Main Course",		    "itemName": "french fries",		
+	        "itemName": "Garlic Bread Mozzarella",	        "itemName": "Garlic Bread Mozzarella",	    },	        "itemName": "Risotto Con Funghi Veg",		        "itemName": "Emilgrana & Mushroom Dip",	        "itemName": "Fruit Pizza",	        "itemName": "Mexican Delight Pizza",		    "price": 50,		
+	        "price": 45.99,	        "price": 45.99,	    {	        "price": 75,		        "price": 41.4,	        "price": 60,	        "price": 68,		    "cuisine": "Asian"		
+	        "cuisine": "Italian"	        "cuisine": "Italian"	        "id": 204,	        "cuisine": "Italian"		        "cuisine": "Asian"	        "cuisine": "French"	        "cuisine": "Mexican"		  }		
+	    },	    },	        "category": "Beverages",	    },		    },	    },	    },				
+	    {	    {	        "itemName": "Water Melon Ice Tea",	    {		    {	    {	    {				
+	        "id": 104,	        "id": 104,	        "price": 2.5	        "id": 304,		        "id": 308,	        "id": 302,	        "id": 307,				
+	        "category": "Starters",	        "category": "Starters",	    },	        "category": "Main Course",		        "category": "Main Course",	        "category": "Main Course",	        "category": "Main Course",				
+	        "itemName": "Veg Wrap",	        "itemName": "Veg Wrap",	    {	        "itemName": "Penne con Peppadew",		        "itemName": "Pomodoro Pesto Pizza By the Slice",	        "itemName": " Combo of 2 Veg Pizzas",	        "itemName": "Spaghetti Aglio e Olio",				
+	        "price": 35,	        "price": 35,	        "id": 205,	        "price": 65,		        "price": 60,	        "price": 80,	        "price": 70,				
+	        "cuisine": "French"	        "cuisine": "French"	        "category": "Beverages",	        "cuisine": "Italian"		        "cuisine": "Asian"	        "cuisine": "French"	        "cuisine": "Mexican"				
+	    },	    },	        "itemName": "Diet Pepsi",	    },		    },	    }	    }				
+	    {	    {	        "price": 1	    {		    {	]	]				
+	        "id": 105,	        "id": 105,	    }	        "id": 305,		        "id": 309,						
+	        "category": "Starters",	        "category": "Starters",	]	        "category": "Main Course",		        "category": "Main Course",						
+	        "itemName": "Spinach and Artichoke Tortilla Crisp",	        "itemName": "Spinach and Artichoke Tortilla Crisp",		        "itemName": "Dan Dan Noodles",		        "itemName": "Cheese Burst Pizza",						
+	        "price": 58,	        "price": 58,		        "price": 50,		        "price": 50,						
+	        "cuisine": "French"	        "cuisine": "French"		        "cuisine": "Chinese"		        "cuisine": "Asian"						
+	    },	    },		    },		    },						
+	    {	    {		    {		    {						
+	        "id": 106,	        "id": 106,		        "id": 306,		        "id": 310,						
+	        "category": "Starters",	        "category": "Starters",		        "category": "Main Course",		        "category": "Main Course",						
+	        "itemName": "Chocolate Cheesecake",	        "itemName": "Chocolate Cheesecake",		        "itemName": "Mexican Delight Pizza",		        "itemName": "Fresh Veggi Special Pizza",						
+	        "price": 48,	        "price": 48,		        "price": 68,		        "price": 80,						
+	        "cuisine": "Italian"	        "cuisine": "Italian"		        "cuisine": "Mexican"		        "cuisine": "Asian"						
+	    },	    },		    },		    }						
+	    {	    {		    {		]						
+	        "id": 107,	        "id": 107,		        "id": 307,								
+	        "category": "Starters",	        "category": "Starters",		        "category": "Main Course",								
+	        "itemName": "Mini Vegetable Lasagna",	        "itemName": "Mini Vegetable Lasagna",		        "itemName": "Spaghetti Aglio e Olio",								
+	        "price": 68.99,	        "price": 68.99,		        "price": 70,								
+	        "cuisine": "Italian"	        "cuisine": "Italian"		        "cuisine": "Mexican"								
+	    },	    },		    },								
+	    {	    {		    {								
+	        "id": 108,	        "id": 108,		        "id": 308,								
+	        "category": "Starters",	        "category": "Starters",		        "category": "Main Course",								
+	        "itemName": "Potato Wedges",	        "itemName": "Potato Wedges",		        "itemName": "Pomodoro Pesto Pizza By the Slice",								
+	        "price": 42.99,	        "price": 42.99,		        "price": 60,								
+	        "cuisine": "Mexican"	        "cuisine": "Mexican"		        "cuisine": "Asian"								
+	    },	    },		    },								
+	    {	    {		    {								
+	        "id": 109,	        "id": 109,		        "id": 309,								
+	        "category": "Starters",	        "category": "Starters",		        "category": "Main Course",								
+	        "itemName": "Brownie",	        "itemName": "Brownie",		        "itemName": "Cheese Burst Pizza",								
+	        "price": 60.99,	        "price": 60.99,		        "price": 50,								
+	        "cuisine": "Mexican"	        "cuisine": "Mexican"		        "cuisine": "Asian"								
+	    },	    },		    },								
+	    {	    {		    {								
+	        "id": 110,	        "id": 110,		        "id": 310,								
+	        "category": "Starters",	        "category": "Starters",		        "category": "Main Course",								
+	        "itemName": "Emilgrana & Mushroom Dip",	        "itemName": "Emilgrana & Mushroom Dip",		        "itemName": "Fresh Veggi Special Pizza",								
+	        "price": 41.4,	        "price": 41.4,		        "price": 80,								
+	        "cuisine": "Asian"	        "cuisine": "Asian"		        "cuisine": "Asian"								
+	    },	    }		    }								
+	    {	]		]								
+	        "id": 201,											
+	        "category": "Beverages",											
+	        "itemName": "Berry Blast",											
+	        "price": 1.72											
+	    },											
+	    {											
+	        "id": 202,											
+	        "category": "Beverages",											
+	        "itemName": "Oreo Monster Shake",											
+	        "price": 3.78											
+	    },											
+	    {											
+	        "id": 203,											
+	        "category": "Beverages",											
+	        "itemName": "Classic Mojito",											
+	        "price": 3.44											
+	    },											
+	    {											
+	        "id": 204,											
+	        "category": "Beverages",											
+	        "itemName": "Water Melon Ice Tea",											
+	        "price": 2.5											
+	    },											
+	    {											
+	        "id": 205,											
+	        "category": "Beverages",											
+	        "itemName": "Diet Pepsi",											
+	        "price": 1											
+	    },											
+	    {											
+	        "id": 301,											
+	        "category": "Main Course",											
+	        "itemName": "Fruit Pizza",											
+	        "price": 60,											
+	        "cuisine": "French"											
+	    },											
+	    {											
+	        "id": 302,											
+	        "category": "Main Course",											
+	        "itemName": " Combo of 2 Veg Pizzas",											
+	        "price": 80,											
+	        "cuisine": "French"											
+	    },											
+	    {											
+	        "id": 303,											
+	        "category": "Main Course",											
+	        "itemName": "Risotto Con Funghi Veg",											
+	        "price": 75,											
+	        "cuisine": "Italian"											
+	    },											
+	    {											
+	        "id": 304,											
+	        "category": "Main Course",											
+	        "itemName": "Penne con Peppadew",											
+	        "price": 65,											
+	        "cuisine": "Italian"											
+	    },											
+	    {											
+	        "id": 305,											
+	        "category": "Main Course",											
+	        "itemName": "Dan Dan Noodles",											
+	        "price": 50,											
+	        "cuisine": "Chinese"											
+	    },											
+	    {											
+	        "id": 306,											
+	        "category": "Main Course",											
+	        "itemName": "Mexican Delight Pizza",											
+	        "price": 68,											
+	        "cuisine": "Mexican"											
+	    },											
+	    {											
+	        "id": 307,											
+	        "category": "Main Course",											
+	        "itemName": "Spaghetti Aglio e Olio",											
+	        "price": 70,											
+	        "cuisine": "Mexican"											
+	    },											
+	    {											
+	        "id": 308,											
+	        "category": "Main Course",											
+	        "itemName": "Pomodoro Pesto Pizza By the Slice",											
+	        "price": 60,											
+	        "cuisine": "Asian"											
+	    },											
+	    {											
+	        "id": 309,											
+	        "category": "Main Course",											
+	        "itemName": "Cheese Burst Pizza",											
+	        "price": 50,											
+	        "cuisine": "Asian"											
+	    },											
+	    {											
+	        "id": 310,											
+	        "category": "Main Course",											
+	        "itemName": "Fresh Veggi Special Pizza",											
+	        "price": 80,											
+	        "cuisine": "Asian"											
+	    }											
+	]

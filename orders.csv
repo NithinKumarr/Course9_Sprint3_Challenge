@@ -1,0 +1,134 @@
+HTTP Request,View all orders,View all orders based on specific date,View all orders placed by a specific customer,View all orders by delivery status,Accept Order details,Modify Order,Cancel Order
+URL	View all orders	View all orders based on specific date	View all orders placed by a specific custome	View all orders by delivery status	Accept Order details	Cancel Order
+METHOD	GET	GET	GET	GET	GET	GET
+REQUEST	http://localhost:3000/orders	http://localhost:3000/orders?orderDate=06-27-2022	http://localhost:3000/orders/?id=604	http://localhost:3000/orders/?deliveryStatus=order returned	http://localhost:3000/orders/?deliveryStatus=delivered	http://localhost:3000/orders/?deliveryStatus=order returned
+HTTP Response	SUCCESS	SUCCESS	SUCCESS	SUCCESS	SUCCESS	SUCCESS
+Status Code	200	200	200	200	200	200
+Status Message	OK	OK	OK	OK	OK	OK
+Body	[	[	[	[	[	[
+	    {	    {	    {	    {	    {	    {
+	        "id": 601,	        "id": 604,	        "id": 604,	        "id": 602,	        "id": 601,	        "id": 602,
+	        "orderDate": "06-22-2022",	        "orderDate": "06-27-2022",	        "orderDate": "06-27-2022",	        "orderDate": "06-24-2022",	        "orderDate": "06-22-2022",	        "orderDate": "06-24-2022",
+	        "deliveryStatus": "delivered",	        "deliveryStatus": "delivered",	        "deliveryStatus": "delivered",	        "deliveryStatus": "order returned",	        "deliveryStatus": "delivered",	        "deliveryStatus": "order returned",
+	        "items": [	        "items": [	        "items": [	        "items": [	        "items": [	        "items": [
+	            {	            {	            {	            {	            {	            {
+	                "itemName": "Berry Blast",	                "itemName": "Berry Blast",	                "itemName": "Berry Blast",	                "itemName": "Potato Wedges",	                "itemName": "Berry Blast",	                "itemName": "Potato Wedges",
+	                "price": 1.72	                "price": 1.72	                "price": 1.72	                "price": 42.99	                "price": 1.72	                "price": 42.99
+	            },	            },	            },	            },	            },	            },
+	            {	            {	            {	            {	            {	            {
+	                "itemName": "Emilgrana & Mushroom Dip",	                "itemName": "Garlic Bread Mozzarella",	                "itemName": "Garlic Bread Mozzarella",	                "itemName": "Cheese Burst Pizza",	                "itemName": "Emilgrana & Mushroom Dip",	                "itemName": "Cheese Burst Pizza",
+	                "price": 41.4	                "price": 45.99	                "price": 45.99	                "price": 50	                "price": 41.4	                "price": 50
+	            }	            },	            },	            },	            }	            },
+	        ],	            {	            {	            {	        ],	            {
+	        "customer": {	                "itemName": "Risotto Con Funghi Veg",	                "itemName": "Risotto Con Funghi Veg",	                "itemName": "Oreo Monster Shake",	        "customer": {	                "itemName": "Oreo Monster Shake",
+	            "name": "Mary",	                "price": 75	                "price": 75	                "price": 3.78	            "name": "Mary",	                "price": 3.78
+	            "email": "mary@gmail.com",	            }	            }	            }	            "email": "mary@gmail.com",	            }
+	            "phoneNumber": "+11524449876",	        ],	        ],	        ],	            "phoneNumber": "+11524449876",	        ],
+	            "address": {	        "customer": {	        "customer": {	        "customer": {	            "address": {	        "customer": {
+	                "streetName": "Scottsdale Kierland",	            "name": "Mary",	            "name": "Mary",	            "name": "Paul",	                "streetName": "Scottsdale Kierland",	            "name": "Paul",
+	                "streetNo": "100",	            "email": "mary@gmail.com",	            "email": "mary@gmail.com",	            "email": "Paul@gmail.com",	                "streetNo": "100",	            "email": "Paul@gmail.com",
+	                "postalCode": "85254"	            "phoneNumber": "+11524449876",	            "phoneNumber": "+11524449876",	            "phoneNumber": "+11526789543",	                "postalCode": "85254"	            "phoneNumber": "+11526789543",
+	            }	            "address": {	            "address": {	            "address": {	            }	            "address": {
+	        }	                "streetName": "Scottsdale Kierland",	                "streetName": "Scottsdale Kierland",	                "streetName": "Buena Vista Drive",	        }	                "streetName": "Buena Vista Drive",
+	    },	                "streetNo": "100",	                "streetNo": "100",	                "streetNo": "A-498",	    },	                "streetNo": "A-498",
+	    {	                "postalCode": "85254"	                "postalCode": "85254"	                "postalCode": "32830"	    {	                "postalCode": "32830"
+	        "id": 602,	            }	            }	            }	        "id": 604,	            }
+	        "orderDate": "06-24-2022",	        }	        }	        }	        "orderDate": "06-27-2022",	        }
+	        "deliveryStatus": "order returned",	    }	    }	    },	        "deliveryStatus": "delivered",	    },
+	        "items": [	]	]	    {	        "items": [	    {
+	            {			        "id": 603,	            {	        "id": 603,
+	                "itemName": "Potato Wedges",			        "orderDate": "06-25-2022",	                "itemName": "Berry Blast",	        "orderDate": "06-25-2022",
+	                "price": 42.99			        "deliveryStatus": "order returned",	                "price": 1.72	        "deliveryStatus": "order returned",
+	            },			        "items": [	            },	        "items": [
+	            {			            {	            {	            {
+	                "itemName": "Cheese Burst Pizza",			                "itemName": "Mexican Delight Pizza",	                "itemName": "Garlic Bread Mozzarella",	                "itemName": "Mexican Delight Pizza",
+	                "price": 50			                "price": 68	                "price": 45.99	                "price": 68
+	            },			            }	            },	            }
+	            {			        ],	            {	        ],
+	                "itemName": "Oreo Monster Shake",			        "customer": {	                "itemName": "Risotto Con Funghi Veg",	        "customer": {
+	                "price": 3.78			            "name": "Jennifer",	                "price": 75	            "name": "Jennifer",
+	            }			            "email": "Jennifer@yahoo.com",	            }	            "email": "Jennifer@yahoo.com",
+	        ],			            "phoneNumber": "+11525432178",	        ],	            "phoneNumber": "+11525432178",
+	        "customer": {			            "address": {	        "customer": {	            "address": {
+	            "name": "Paul",			                "streetName": "Beachwalk",	            "name": "Mary",	                "streetName": "Beachwalk",
+	            "email": "Paul@gmail.com",			                "streetNo": "902",	            "email": "mary@gmail.com",	                "streetNo": "902",
+	            "phoneNumber": "+11526789543",			                "postalCode": "96815"	            "phoneNumber": "+11524449876",	                "postalCode": "96815"
+	            "address": {			            }	            "address": {	            }
+	                "streetName": "Buena Vista Drive",			        }	                "streetName": "Scottsdale Kierland",	        }
+	                "streetNo": "A-498",			    },	                "streetNo": "100",	    },
+	                "postalCode": "32830"			    {	                "postalCode": "85254"	    {
+	            }			        "id": 605,	            }	        "id": 605,
+	        }			        "orderDate": "06-29-2022",	        }	        "orderDate": "06-29-2022",
+	    },			        "deliveryStatus": "order returned",	    }	        "deliveryStatus": "order returned",
+	    {			        "items": [	]	        "items": [
+	        "id": 603,			            {		            {
+	        "orderDate": "06-25-2022",			                "itemName": " Combo of 2 Veg Pizzas",		                "itemName": " Combo of 2 Veg Pizzas",
+	        "deliveryStatus": "order returned",			                "price": 80		                "price": 80
+	        "items": [			            }		            }
+	            {			        ],		        ],
+	                "itemName": "Mexican Delight Pizza",			        "customer": {		        "customer": {
+	                "price": 68			            "name": "David",		            "name": "David",
+	            }			            "email": "david@gmail.com",		            "email": "david@gmail.com",
+	        ],			            "phoneNumber": "+11527896543",		            "phoneNumber": "+11527896543",
+	        "customer": {			            "address": {		            "address": {
+	            "name": "Jennifer",			                "streetName": "Court Street",		                "streetName": "Court Street",
+	            "email": "Jennifer@yahoo.com",			                "streetNo": "123",		                "streetNo": "123",
+	            "phoneNumber": "+11525432178",			                "postalCode": "2617"		                "postalCode": "2617"
+	            "address": {			            }		            }
+	                "streetName": "Beachwalk",			        }		        }
+	                "streetNo": "902",			    }		    }
+	                "postalCode": "96815"			]		]
+	            }					
+	        }					
+	    },					
+	    {					
+	        "id": 604,					
+	        "orderDate": "06-27-2022",					
+	        "deliveryStatus": "delivered",					
+	        "items": [					
+	            {					
+	                "itemName": "Berry Blast",					
+	                "price": 1.72					
+	            },					
+	            {					
+	                "itemName": "Garlic Bread Mozzarella",					
+	                "price": 45.99					
+	            },					
+	            {					
+	                "itemName": "Risotto Con Funghi Veg",					
+	                "price": 75					
+	            }					
+	        ],					
+	        "customer": {					
+	            "name": "Mary",					
+	            "email": "mary@gmail.com",					
+	            "phoneNumber": "+11524449876",					
+	            "address": {					
+	                "streetName": "Scottsdale Kierland",					
+	                "streetNo": "100",					
+	                "postalCode": "85254"					
+	            }					
+	        }					
+	    },					
+	    {					
+	        "id": 605,					
+	        "orderDate": "06-29-2022",					
+	        "deliveryStatus": "order returned",					
+	        "items": [					
+	            {					
+	                "itemName": " Combo of 2 Veg Pizzas",					
+	                "price": 80					
+	            }					
+	        ],					
+	        "customer": {					
+	            "name": "David",					
+	            "email": "david@gmail.com",					
+	            "phoneNumber": "+11527896543",					
+	            "address": {					
+	                "streetName": "Court Street",					
+	                "streetNo": "123",					
+	                "postalCode": "2617"					
+	            }					
+	        }					
+	    }					
+	]

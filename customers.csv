@@ -1,0 +1,64 @@
+HTTP Request,Fetch all customer details,Fetch Customer by ID,Fetch Customer by Name,Fetch Customer by Email,Add new customer,Update customer details
+URL	Fetch all customer details	Fetch Customer by ID	Fetch Customer by Name	Fetch Customer by Email	Add new customer	Update customer details
+METHOD	GET	GET		GET	POST	PUT
+REQUEST	http://localhost:3000/customers	http://localhost:3000/customers/4	http://localhost:3000/customers?name=David	http://localhost:3000/customers?email=Jennifer@yahoo.com	http://localhost:3000/customers	http://localhost:3000/customers/6
+HTTP Response	SUCCESS	SUCCESS	SUCCESS	SUCCESS	SUCCESS	SUCCESS
+Status Code	200	200	200	200	201	200
+Status Message	OK	OK	OK	OK	OK	OK
+Body	[	{	[	[	{	{
+	    {	    "id": 4,	    {	    {	    "name": "Suriya",	        "name": "stanley",
+	        "id": 1,	    "name": "Jessica",	        "id": 1,	        "id": 3,	    "email": "suriya@gmail.com",	        "email": "stanley@gmail.com",
+	        "name": "David",	    "email": "Jessica@live.com",	        "name": "David",	        "name": "Jennifer",	    "phoneNumber": "+11997896543",	        "phoneNumber": "+11977896543",
+	        "email": "david@gmail.com",	    "phoneNumber": "+11523456732",	        "email": "david@gmail.com",	        "email": "Jennifer@yahoo.com",	    "address": {	        "address": {
+	        "phoneNumber": "+11527896543",	    "address": {	        "phoneNumber": "+11527896543",	        "phoneNumber": "+11525432178",	        "streetName": "Court Street",	            "streetName": "north Street",
+	        "address": {	        "streetName": "Bellevue Square",	        "address": {	        "address": {	        "streetNo": "24",	            "streetNo": "28",
+	            "streetName": "Court Street",	        "streetNo": "378",	            "streetName": "Court Street",	            "streetName": "Beachwalk",	        "postalCode": "2617"	            "postalCode": "2617"
+	            "streetNo": "123",	        "postalCode": "98004"	            "streetNo": "123",	            "streetNo": "902",	    },	        }
+	            "postalCode": "2617"	    }	            "postalCode": "2617"	            "postalCode": "96815"	    "id": 6	    }
+	        }	}	        }	        }	}	
+	    },		    }	    }		
+	    {		]	]		
+	        "id": 2,					
+	        "name": "Mary",					
+	        "email": "mary@gmail.com",					
+	        "phoneNumber": "+11524449876",					
+	        "address": {					
+	            "streetName": "Scottsdale Kierland",					
+	            "streetNo": "100",					
+	            "postalCode": "85254"					
+	        }					
+	    },					
+	    {					
+	        "id": 3,					
+	        "name": "Jennifer",					
+	        "email": "Jennifer@yahoo.com",					
+	        "phoneNumber": "+11525432178",					
+	        "address": {					
+	            "streetName": "Beachwalk",					
+	            "streetNo": "902",					
+	            "postalCode": "96815"					
+	        }					
+	    },					
+	    {					
+	        "id": 4,					
+	        "name": "Jessica",					
+	        "email": "Jessica@live.com",					
+	        "phoneNumber": "+11523456732",					
+	        "address": {					
+	            "streetName": "Bellevue Square",					
+	            "streetNo": "378",					
+	            "postalCode": "98004"					
+	        }					
+	    },					
+	    {					
+	        "id": 5,					
+	        "name": "Paul",					
+	        "email": "Paul@gmail.com",					
+	        "phoneNumber": "+11526789543",					
+	        "address": {					
+	            "streetName": "Buena Vista Drive",					
+	            "streetNo": "A-498",					
+	            "postalCode": "32830"					
+	        }					
+	    }					
+	]
